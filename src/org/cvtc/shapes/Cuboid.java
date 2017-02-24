@@ -80,9 +80,7 @@ public class Cuboid extends Shape implements Renderer {
 	}
 
 	public int render() {
-		
-		// SAG: This dialog needs to be a class variable, not a local variable
-		// SAG: This is tightly coupled code
+
 		return dialog.show("The cuboid's dimensions are: \n" + "width: " + (getWidth())
 				+ "\nheight: " + (getHeight()) + " \ndepth: " + (getDepth()) 
 				+ "\n\nCalculations:\nSurface Area: " + (surfaceArea()) 
