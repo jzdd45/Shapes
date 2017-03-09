@@ -5,7 +5,6 @@ public class Sphere extends Shape implements Renderer {
 
 	// Private Class variable
 	private float radius = 0.0f;
-	Dialog dialog = new MessageBox();
 
 	// Constructor which will take in the passed-in value and check if it is less than zero.
 	// If it is less than zero an exception is thrown.
@@ -47,7 +46,7 @@ public class Sphere extends Shape implements Renderer {
 	
 	public int render() {
 		
-		return dialog.show("The sphere's dimensions are: \n" + "Radius: " + (getRadius())
+		return getDialog().show("The sphere's dimensions are: \n" + "Radius: " + (getRadius())
 				+ "\n\nCalculations:\nSurface Area: " + (surfaceArea()) 
 				+ "\nVolume: " + (volume()));
 	}

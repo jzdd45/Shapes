@@ -6,7 +6,6 @@ public class Cylinder extends Shape implements Renderer {
 	// Private Class variables
 	private float radius = 0.0f;
 	private float height = 0.0f;
-	Dialog dialog = new MessageBox();
 	
 	// Constructor which will take in the passed-in value and check if it is less than zero.
 	// If it is less than zero an exception is thrown.
@@ -61,7 +60,7 @@ public class Cylinder extends Shape implements Renderer {
 	
 	public int render() {
 		
-		return dialog.show("The cylinder's dimensions are: \n" + "Radius: " + (getRadius())
+		return getDialog().show("The cylinder's dimensions are: \n" + "Radius: " + (getRadius())
 				+ "\nheight: " + (getHeight())
 				+ "\n\nCalculations:\nSurface Area: " + (surfaceArea()) 
 				+ "\nVolume: " + (volume()));
